@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-db-read-write-sharding-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-db-sharding-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-db-sharding-table-read-write-range-group-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-db-sharding-table-read-write-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-db-sharding-table-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-read-write-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-sharding-table-read-write-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sjdbc-sharding-table-springboot" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

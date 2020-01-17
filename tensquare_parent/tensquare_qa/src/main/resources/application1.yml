@@ -1,0 +1,110 @@
+#项目配置文件中的用到的技术
+spring.profiles: test
+spring:
+  redis:
+    host:
+    port:
+    timeout:
+    database:
+    userHost:
+    userPort:
+    userDatabase:
+  data.mongodb:
+  host:
+  port:
+  database:
+  username:
+  password:
+  #数据库
+  datasource:
+    name: apl
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    minIdle: 5
+    maxActive: 10
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    url: jdbc:mysql://ip/apl_ltcfsc?characterEncoding=utf8&usrSSL=false
+    username:
+    password:
+  rabbitmq:
+    host:
+    port:
+    username:
+    password:
+    VirtualHost: aa
+  boot.admin.discovery.converter.management-context-path: /admin
+redis:
+  session:
+    timeout:
+      oAthuUrl:
+eureka:
+  instance:
+  preferIpAddress: true #将服务的ip在注册中心进行展示
+  healthCheckUrlPath: /admin/health #使用啦boot的监测框架 这个是访问框架的路径后缀
+  statusPageUrlPath: /swagger-ui.html #访问swagger页面的后缀
+#服务降级和隔离 使用熔断器
+hystrix.command.default:
+  execution.isolution.thread.timeoutInMilliseconds: 10000
+#log path
+log.path:
+#log switch
+spring.log.write: false
+server.tomcat.access-log-enable: false
+security.oauth2.resource:
+  jwt:
+    keyValue:
+spring.http.multipart.maxFileSize: 20Mb
+spring.http.multipart.maxRequestSize: 20Mb
+
+mybatis:
+  mapperLocations: classpath:/mappers/**/*.xml
+  typeAliasesPackage: com.aa.health.apl.dao
+logging.level.con.aa.health.apl.dao: DEBUG
+
+#分库分表配置
+spring.datasource.master:
+    name: apl
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    minIdle: 5
+    maxActive: 10
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    url: jdbc:mysql://ip/apl_ltcfsc?characterEncoding=utf8&usrSSL=false
+    username:
+    password:
+sharding:
+  jdbc:
+    datasource:
+      names: slavertsk
+      type: com.zaxxer.hikari.HikariDataSource
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://ip1/apl_ltcfsc_slaver?characterEncoding=utf8&usrSSL=false  #两者路径一致
+      url: jdbc:mysql://ip1/apl_ltcfsc_slaver?characterEncoding=utf8&usrSSL=false      #两者路径一致
+      username:
+      password:
+      hikari:
+        maximum-pool-size: 20
+      minIdle: 5
+      maxActive: 10
+      initialSize: 1
+      timeBetweenEvictionRunsMillis: 3000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+
+server:
+  max-http-header-size: 65536

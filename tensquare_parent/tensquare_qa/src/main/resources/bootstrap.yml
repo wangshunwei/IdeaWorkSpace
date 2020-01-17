@@ -1,0 +1,10 @@
+server.port: 8014
+spring:
+  application.name: aa-wsw
+  cloud.config.name: bb #配置中心这个项目的文件的名字
+  servlet.multipart.max-file-size: 100000KB
+  servlet.multipart.max-request-size: 100000KB
+  profiles.active: test  #加载测试环境的配置文件 spring.profiles: test
+server:
+  max-http-header-size: 100000000
+eureka.client.serviceUrl.defaultZone: http://ip/eureka/

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sjdbc-db-read-write-sharding-springboot" />
+        <module name="sjdbc-db-sharding-springboot" />
+        <module name="sjdbc-db-sharding-table-read-write-range-group-springboot" />
+        <module name="sjdbc-db-sharding-table-read-write-springboot" />
+        <module name="sjdbc-db-sharding-table-springboot" />
+        <module name="sjdbc-read-write-springboot" />
+        <module name="sjdbc-sharding-table-read-write-springboot" />
+        <module name="sjdbc-sharding-table-springboot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shardingjdbc" target="1.8" />
+      <module name="sjdbc-db-read-write-sharding-springboot" target="1.8" />
+      <module name="sjdbc-db-sharding-springboot" target="1.8" />
+      <module name="sjdbc-db-sharding-table-read-write-range-group-springboot" target="1.8" />
+      <module name="sjdbc-db-sharding-table-read-write-springboot" target="1.8" />
+      <module name="sjdbc-db-sharding-table-springboot" target="1.8" />
+      <module name="sjdbc-read-write-springboot" target="1.8" />
+      <module name="sjdbc-sharding-table-read-write-springboot" target="1.8" />
+      <module name="sjdbc-sharding-table-springboot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+server: 
+  port: 9003
+spring: 
+  application:  
+    name: junit-test #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/pinyougoudb?characterEncoding=UTF8
+    username: root
+    password: root
+mybatis:
+  mapperLocations: classpath:/mapper/**/*.xml
+  typeAliasesPackage: com.junit.dao

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shardingjdbc.iml" filepath="$PROJECT_DIR$/shardingjdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-db-read-write-sharding-springboot/sjdbc-db-read-write-sharding-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-db-read-write-sharding-springboot/sjdbc-db-read-write-sharding-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-db-sharding-springboot/sjdbc-db-sharding-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-db-sharding-springboot/sjdbc-db-sharding-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-db-sharding-table-read-write-range-group-springboot/sjdbc-db-sharding-table-read-write-range-group-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-db-sharding-table-read-write-range-group-springboot/sjdbc-db-sharding-table-read-write-range-group-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-db-sharding-table-read-write-springboot/sjdbc-db-sharding-table-read-write-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-db-sharding-table-read-write-springboot/sjdbc-db-sharding-table-read-write-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-db-sharding-table-springboot/sjdbc-db-sharding-table-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-db-sharding-table-springboot/sjdbc-db-sharding-table-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-read-write-springboot/sjdbc-read-write-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-read-write-springboot/sjdbc-read-write-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-sharding-table-read-write-springboot/sjdbc-sharding-table-read-write-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-sharding-table-read-write-springboot/sjdbc-sharding-table-read-write-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjdbc-sharding-table-springboot/sjdbc-sharding-table-springboot.iml" filepath="$PROJECT_DIR$/sjdbc-sharding-table-springboot/sjdbc-sharding-table-springboot.iml" />
+    </modules>
+  </component>
+</project>

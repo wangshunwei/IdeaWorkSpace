@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="sockjs.min.js"></script>
+<body>
+
+
+
+
+
+
+</body>
+
+
+<script>
+    // 定义websocket方法
+    var ws = null;
+    function openWebSocket(){
+        //判断当前浏览器是否支持WebSocket
+        if ('WebSocket' in window) {
+            ws = new WebSocket("ws://"+window.location.host+"/myHandler?type=mall");
+        } else {
+            ws = new SockJS("http://"+window.location.host+"/myHandler/info?type=mall");
+        }
+        ws.onopen = function () {
+
+        };
+        //这个事件是接受后端传过来的数据
+        ws.onmessage = function (event) {
+            //根据业务逻辑解析数据
+        };
+        ws.onclose = function (event) {
+
+        };
+    }
+    //页面已加载后加载后台数据
+    $(function (){
+        $.ajax({
+            cache:false,
+            data:"",
+            type:"post",
+            url:"",
+            success:function(data, textStatus){
+                if(data && data.status === "1"){
+                    //这里可以初始化操作
+                    openWebSocket();//websocket连接到后台
+                    if(ws){
+                        setTimeout(function (){
+                            ws.send("");//发送信息到后台，开始有数据跟新就写到前端显示
+                        },3000);
+                    }
+                } else {
+                    alert("操作失败！");
+                }
+            },
+        });
+    });
+
+</script>
+
+
+</html>
